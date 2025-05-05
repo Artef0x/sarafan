@@ -1,0 +1,183 @@
+.banner {
+  background-image: url(../images/banner/banner__women.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 954px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.banner__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner__burger {
+  display: none;
+}
+
+.banner__list {
+  display: flex;
+  gap: 40px;
+}
+.banner__link {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.banner__input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.banner__search {
+  background: transparent;
+  outline: none;
+}
+
+.banner__input svg {
+  margin-right: 5px;
+}
+
+.banner__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner__profile svg {
+  cursor: pointer;
+}
+
+.banner__title {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.banner__arrow-left {
+  position: absolute;
+  left: 5%;
+  transform: rotate(180deg);
+}
+
+.banner__arrow-right {
+  position: absolute;
+  right: 5%;
+}
+
+.banner__block {
+  color: var(--white);
+  line-height: 114%;
+  text-align: center;
+  width: 370px;
+}
+
+.banner__h2 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.banner__h1 {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 63px;
+  line-height: 114%;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.banner__button:hover {
+  background-color: rgb(131, 130, 130);
+  color: white;
+}
+.banner__button {
+  color: var(--black);
+  background-color: var(--white);
+  border: none;
+  width: 300px;
+  height: 56px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.banner__button_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.banner__slider svg:hover {
+  fill: rgb(235, 215, 126);
+}
+
+.banner__slider svg {
+  cursor: pointer;
+  fill: white;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+.banner__slider {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1400px) {
+  .banner__arrow-left,
+  .banner__arrow-right {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner__header {
+    background-color: var(--white);
+    padding: 0 5%;
+  }
+
+  .banner__profile_like {
+    display: none;
+  }
+  .banner__profile_shop {
+    order: 1;
+  }
+  .banner__profile_profile {
+    order: 0;
+  }
+  .banner__input {
+    display: none;
+  }
+  .banner__link {
+    display: none;
+  }
+  .banner__burger {
+    display: contents;
+    cursor: pointer;
+  }
+  .banner__title {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background-image: url(../images/banner/banner__women720.jpg);
+    background-size: cover;
+  }
+  .banner__header {
+    margin-bottom: 160px;
+  }
+  .banner__h2 {
+    color: var(--black);
+  }
+  .banner__h1 {
+    color: var(--black);
+  }
+}

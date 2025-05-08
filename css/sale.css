@@ -1,0 +1,89 @@
+.sale__text {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.sale__link {
+  display: none;
+}
+
+.sale__list {
+  display: flex;
+  gap: 30px;
+}
+.dress-red {
+  display: none;
+}
+.dress-red img {
+  min-width: 270px;
+  min-height: 353px;
+}
+.sale__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 114%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+.sale__item {
+  position: relative;
+}
+
+.sale__like {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.sale__like:hover {
+  color: rgb(255, 53, 53);
+  transform: scale(1.1);
+}
+
+.sale__subtite {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 114%;
+  color: var(--black);
+}
+
+.sale__price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 114%;
+  color: var(--black);
+}
+
+@media (max-width: 864px) {
+  .sale__list {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 585px) {
+  .sale__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+  }
+  .dress-red {
+    display: block;
+  }
+  .sale__link {
+    display: contents;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

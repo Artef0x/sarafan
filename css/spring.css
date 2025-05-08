@@ -1,0 +1,82 @@
+.spring__text {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.spring__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 114%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  margin-right: 100px;
+}
+
+.spring__block-mobile {
+  display: none;
+}
+
+.spring__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--black);
+  max-width: 370px;
+  margin-bottom: 30px;
+}
+
+.spring__link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--gray);
+}
+
+.spring__collection {
+  display: flex;
+  gap: 30px;
+}
+.spring__collection img {
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .spring__photo-right {
+    display: none;
+  }
+  .spring__photo-left {
+    width: 100%;
+  }
+  .spring__block {
+    display: none;
+  }
+  .spring__text {
+    justify-content: center;
+  }
+  .spring__title {
+    margin: 0;
+  }
+  .spring__block-mobile {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .spring__title {
+    font-size: 18px;
+  }
+  .spring__block-mobile .spring__desc {
+    font-size: 11px;
+  }
+  .spring__block-mobile a {
+    font-size: 13px;
+  }
+}

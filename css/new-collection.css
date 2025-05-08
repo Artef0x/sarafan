@@ -1,6 +1,3 @@
-.new-collection {
-  margin-bottom: 100px;
-}
 .new-collection__text {
   display: flex;
   align-items: center;
@@ -8,7 +5,7 @@
   justify-content: space-between;
 }
 
-.new-collection__h2 {
+.new-collection__title {
   letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 25px;
@@ -89,7 +86,7 @@
   .new-collection__price {
     font-size: 11px;
   }
-  .new-collection__h2 {
+  .new-collection__title {
     font-size: 18px;
   }
   .new-collection__mobile-btn {

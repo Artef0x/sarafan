@@ -147,10 +147,6 @@
 }
 
 @media (max-width: 1400px) {
-  /* .banner__arrow-left,
-  .banner__arrow-right {
-    display: none;
-  } */
 }
 
 @media (max-width: 992px) {
@@ -187,6 +183,8 @@
   .banner {
     background-image: url(../images/banner/banner__women720.jpg);
     background-size: cover;
+    background-position-y: 88px;
+    background-position-x: 100%;
     height: 100vh;
   }
   .banner__header {

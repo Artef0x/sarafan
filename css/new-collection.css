@@ -1,3 +1,7 @@
+.new-collection {
+  margin-bottom: 100px;
+}
+
 .new-collection__text {
   display: flex;
   align-items: center;
